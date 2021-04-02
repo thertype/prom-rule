@@ -1,0 +1,209 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /api/v1
+paths:
+  /alerts/:
+    get:
+      tags:
+      - alerts
+    put:
+      tags:
+      - alerts
+    post:
+      tags:
+      - alerts
+  /alerts/classify:
+    get:
+      tags:
+      - alerts
+  /alerts/rules/{ruleid}:
+    get:
+      tags:
+      - alerts
+  /configs/:
+    get:
+      tags:
+      - configs
+    post:
+      tags:
+      - configs
+  /configs/{id}:
+    put:
+      tags:
+      - configs
+    delete:
+      tags:
+      - configs
+  /groups/:
+    get:
+      tags:
+      - groups
+    post:
+      tags:
+      - groups
+  /groups/{id}:
+    put:
+      tags:
+      - groups
+    delete:
+      tags:
+      - groups
+  /login/ldap:
+    post:
+      tags:
+      - login
+  /login/local:
+    post:
+      tags:
+      - login
+  /login/method:
+    get:
+      tags:
+      - login
+  /login/username:
+    get:
+      tags:
+      - login
+  /logout/:
+    get:
+      tags:
+      - logout
+  /maintains/:
+    get:
+      tags:
+      - maintains
+    post:
+      tags:
+      - maintains
+  /maintains/{id}:
+    put:
+      tags:
+      - maintains
+    delete:
+      tags:
+      - maintains
+  /maintains/{id}/hosts:
+    get:
+      tags:
+      - maintains
+  /manages/:
+    get:
+      tags:
+      - manages
+    post:
+      tags:
+      - manages
+  /manages/{id}:
+    put:
+      tags:
+      - manages
+    delete:
+      tags:
+      - manages
+  /plans/:
+    get:
+      tags:
+      - plans
+    post:
+      tags:
+      - plans
+  /plans/{planid}:
+    put:
+      tags:
+      - plans
+    delete:
+      tags:
+      - plans
+  /plans/{planid}/receivers/:
+    get:
+      tags:
+      - plans
+    post:
+      tags:
+      - plans
+  /proms/:
+    get:
+      tags:
+      - proms
+    post:
+      tags:
+      - proms
+  /proms/{id}:
+    put:
+      tags:
+      - proms
+    delete:
+      tags:
+      - proms
+  /receivers/{receiverid}:
+    put:
+      tags:
+      - receivers
+    delete:
+      tags:
+      - receivers
+  /regroup/:
+    get:
+      tags:
+      - regroup
+    post:
+      tags:
+      - regroup
+  /regroup/{groupid}:
+    put:
+      tags:
+      - regroup
+    delete:
+      tags:
+      - regroup
+  /regroup/{groupid}/ruleunion/:
+    get:
+      tags:
+      - regroup
+    post:
+      tags:
+      - regroup
+  /reunion/{ruleunionid}:
+    put:
+      tags:
+      - reunion
+    delete:
+      tags:
+      - reunion
+  /rules/:
+    get:
+      tags:
+      - rules
+    post:
+      tags:
+      - rules
+  /rules/{ruleid}:
+    put:
+      tags:
+      - rules
+    delete:
+      tags:
+      - rules
+  /users/:
+    get:
+      tags:
+      - users
+    put:
+      tags:
+      - users
+    post:
+      tags:
+      - users
+  /users/{id}:
+    delete:
+      tags:
+      - users
