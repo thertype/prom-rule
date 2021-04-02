@@ -1,4 +1,4 @@
-module github.com/Qihoo360/doraemon
+module github.com/thertype/prom-rule
 
 go 1.12
 
