@@ -1,7 +1,7 @@
 ## Clone
 
 ```bash
-$ git clone https://github.com/Qihoo360/doraemon.git
+$ git clone https://github.com/thertype/prom-rule.git
 ```
 ## Modify the Configuration File  
 1.Replace the "localhost" in [deployments/docker-compose/conf/config.js](../deployments/docker-compose/conf/config.js) with the local physical network card IP.  

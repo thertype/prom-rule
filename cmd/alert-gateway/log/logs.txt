@@ -3,3 +3,940 @@
 2021/04/02 11:13:43.207 [I] [controller.go:218]  admin /api/v1/plans/2 PUT {2 test test}
 2021/04/02 11:14:02.075 [I] [controller.go:218]  admin /api/v1/plans/2 PUT {2  test}
 2021/04/02 11:14:18.148 [I] [controller.go:218]  admin /api/v1/plans/2 PUT {2 test test}
+2021/04/02 16:37:16.836 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 16:47:19.076 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 16:48:45.529 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 16:51:35.488 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 16:51:35.488 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/02 17:07:52.217 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 17:07:52.217 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/02 17:07:52.217 [I] [rulegroup.go:24]  Models---DEBUG2---
+ [] 
+2021/04/02 17:08:23.684 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 17:08:23.685 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/02 17:08:23.685 [I] [rulegroup.go:24]  Models---DEBUG2---
+ [] 
+2021/04/02 17:19:12.493 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 17:19:12.493 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/02 17:19:12.493 [I] [rulegroup.go:24]  Models---DEBUG2---
+ [] 
+2021/04/02 17:33:59.442 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 17:33:59.442 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/02 17:33:59.442 [I] [rulegroup.go:24]  Models---DEBUG2---
+ [] 
+2021/04/02 17:41:29.261 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/02 17:41:29.261 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/02 17:41:29.262 [I] [rulegroup.go:24]  Models---DEBUG2---
+ [] 
+2021/04/02 17:42:14.733 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:42:14.733 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:42:32.783 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:42:32.783 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:44:46.267 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:44:46.267 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:44:51.232 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:44:51.232 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:45:07.101 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:45:07.101 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:47:22.583 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:47:22.583 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:47:31.296 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/02 17:47:31.296 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/02 18:01:32.680 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/02 18:01:52.137 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 10:35:23.822 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 10:35:23.823 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 10:35:30.718 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 10:35:30.718 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 11:26:58.002 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 11:27:23.205 [I] [controller.go:218]  admin /api/v1/plans/2 PUT {2 plan test}
+2021/04/07 11:27:34.718 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 11:27:34.718 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 11:27:37.877 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 11:27:37.877 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 13:42:39.312 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 13:42:39.313 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 13:42:41.996 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 13:42:41.996 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 13:42:49.614 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 13:42:49.614 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 13:43:11.667 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 13:43:11.667 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 13:43:26.187 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 13:43:26.187 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 13:43:50.463 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 13:43:50.463 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 13:45:08.359 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 13:45:08.359 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:18:06.630 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:18:06.635 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:18:12.014 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:18:12.014 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:18:17.947 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:18:17.947 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:18:33.332 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:18:33.332 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:24:13.841 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:24:13.842 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:24:20.640 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:24:48.513 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:24:48.513 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:24:49.356 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 14:25:03.701 [I] [controller.go:218]  admin /api/v1/rules/18 PUT 18
+2021/04/07 14:25:03.734 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 14:25:10.085 [I] [controller.go:218]  admin /api/v1/rules/18 PUT 18
+2021/04/07 14:25:10.117 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 14:25:15.171 [I] [controller.go:218]  admin /api/v1/rules/16 PUT 16
+2021/04/07 14:25:15.199 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 14:25:20.846 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:25:20.846 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:25:25.324 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:25:25.324 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:25:26.446 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:25:26.447 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:25:33.820 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:30:17.797 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:30:17.797 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:30:19.021 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:30:19.021 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:30:48.153 [I] [value.go:460]  %!s(<nil>) /api/v1/reunion/2 DELETE 2
+2021/04/07 14:30:48.165 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:30:48.165 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:30:54.007 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:30:54.007 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:31:03.407 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:31:03.407 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:31:18.864 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:31:18.864 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:31:20.122 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:31:20.122 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:31:34.816 [I] [value.go:460]  admin /api/v1/reunion/2 DELETE 2
+2021/04/07 14:31:34.825 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:31:34.825 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:31:45.470 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:31:45.470 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:31:46.566 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:31:46.566 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:32:03.049 [I] [value.go:460]  admin /api/v1/reunion/2 DELETE 2
+2021/04/07 14:32:03.060 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:32:03.060 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:33:12.740 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:33:12.740 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:33:13.743 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:33:13.743 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:33:48.812 [I] [controller.go:218]  admin /api/v1/receivers/2 PUT {2 <nil> 00:00 23:59 1 1    test  xxxHOOK http://192.168.70.113:21073/alertXX}
+2021/04/07 14:34:21.560 [I] [controller.go:218]  admin /api/v1/receivers/2 PUT {2 <nil> 00:00 23:59 1 1    test  HOOK t}
+2021/04/07 14:34:26.940 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:34:26.940 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:34:28.540 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:34:28.540 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:39:48.651 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:39:48.652 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:39:55.780 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:39:55.780 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:40:02.966 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:40:02.966 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:40:06.078 [I] [value.go:460]  admin /api/v1/reunion/2 DELETE 2
+2021/04/07 14:40:06.088 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:40:06.088 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:40:11.523 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:40:21.112 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:40:32.358 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:40:32.358 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:40:35.892 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:40:35.892 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:40:40.559 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:44:58.132 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:44:58.133 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:45:02.147 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:46:24.145 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/2 DELETE 2
+2021/04/07 14:46:33.974 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:46:33.974 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:51:30.679 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:51:30.680 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:51:34.632 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:51:34.632 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 14:51:41.150 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:51:41.150 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:51:46.733 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:54:52.585 [I] [controller.go:218]  admin /api/v1/regroup/2 DELETE 2
+2021/04/07 14:54:52.594 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:54:52.594 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:54:55.745 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:54:55.745 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:56:11.061 [I] [controller.go:218]  admin /api/v1/regroup POST {3  OS模板}
+2021/04/07 14:56:11.086 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:56:11.086 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 14:56:22.810 [I] [controller.go:218]  admin /api/v1/regroup/3 PUT {3  OS模板}
+2021/04/07 14:56:22.829 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 14:56:22.829 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:00:09.674 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:00:09.674 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:00:17.686 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:00:17.686 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:00:23.427 [I] [controller.go:218]  admin /api/v1/regroup/3 PUT {3 OS模板 OS模板}
+2021/04/07 15:00:23.450 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:00:23.450 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:00:26.753 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:00:26.753 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:00:27.950 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:00:27.950 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:05:04.373 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 15:09:26.130 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:09:26.130 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:09:29.872 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:09:29.872 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:09:32.501 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:09:32.501 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:09:34.298 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:09:34.298 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:09:52.559 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:09:52.559 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:09:54.170 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 15:11:06.013 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:11:06.013 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:11:08.699 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:11:08.699 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:11:10.819 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:11:10.819 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:41:30.039 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:41:30.040 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:46:20.102 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 15:46:20.103 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 15:46:39.153 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:46:39.153 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 15:48:01.645 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc00030c4e0 00:00 23:59 1 1   te  tt HOOK xxx}
+2021/04/07 15:49:13.056 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc000444d80 00:00 23:59 1 1   te  tt HOOK xxx}
+2021/04/07 15:51:25.337 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc000444e40 00:00 23:59 1 1   te  tt HOOK xxx}
+2021/04/07 15:53:09.630 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001e1a40 00:00 23:59 1 1   te  tt HOOK xxx}
+2021/04/07 16:05:26.196 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 2
+ 
+2021/04/07 16:05:26.198 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 2
+ 
+2021/04/07 16:05:42.671 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 16:05:42.671 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 16:19:39.301 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001b7590 00:00 23:59 1 1   te  tt HOOK xxx}
+2021/04/07 16:49:27.134 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001fd3b0 00:00 23:59 1 1   te  tt HOOK xxx}
+2021/04/07 16:52:13.113 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 16:52:13.116 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 16:52:41.692 [I] [rulegroup.go:67]  RuleGroupController---GetAllRuleUnion--- 3
+ 
+2021/04/07 16:52:41.692 [I] [ruleunion.go:47]  Models---GetAllRuleUnion--- 3
+ 
+2021/04/07 16:57:33.176 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003e06f0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:02:13.981 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003e0ab0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:02:26.807 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00022f0e0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:04:55.163 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003ac6f0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:13:57.220 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:13:57.234 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003910b0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:16:47.067 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:16:47.074 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003748a0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:22:30.283 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:22:30.284 [I] [ruleunion.go:54]  RuleGroupController---AddRuleUnion--- []
+ 
+2021/04/07 17:22:30.304 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003c8a80 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:24:24.483 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:24:24.483 [I] [ruleunion.go:54]  Model---AddRuleUnion--- []
+ 
+2021/04/07 17:24:24.493 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003548a0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:28:51.514 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:28:51.518 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00020cc90 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:30:08.525 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:30:08.533 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003eaae0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:35:40.046 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:35:40.051 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000366810 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:45:03.938 [I] [rulegroup.go:81]  RuleGroupController---AddRuleUnion--- 3
+ 
+2021/04/07 17:45:03.938 [I] [ruleunion.go:52]  Model---AddRuleUnion--- %s
+ 
+2021/04/07 17:45:03.941 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0001fd200 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:50:20.812 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- %!s(int64=0)
+ 
+2021/04/07 17:50:20.812 [I] [ruleunion.go:52]  Model---AddRuleUnion--- %s
+ 
+2021/04/07 17:50:20.814 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000386ba0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:51:28.954 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- %!s(int64=3)
+ 
+2021/04/07 17:51:28.954 [I] [ruleunion.go:52]  Model---AddRuleUnion--- %s
+ 
+2021/04/07 17:51:28.956 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003548a0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 17:55:36.219 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- %!s(int64=3)
+ 
+2021/04/07 17:55:36.219 [I] [ruleunion.go:52]  Model---AddRuleUnion--- %s
+ 
+2021/04/07 17:55:36.223 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 17:55:36.223 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000342f60 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 18:00:11.115 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:00:11.115 [I] [ruleunion.go:59]  Model---AddRuleUnion--- %!s(int64=3),[]
+ 
+2021/04/07 18:00:11.118 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:00:11.118 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003c26f0 16:52 16:54 1 1   tt tt tt HOOK ss}
+2021/04/07 18:01:46.990 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 18:01:46.991 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 18:01:53.420 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 18:01:53.420 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 18:02:21.731 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:02:21.735 [I] [ruleunion.go:59]  Model---AddRuleUnion--p.Plan.Id, groupId- %!s(int64=3),[]
+ 
+2021/04/07 18:02:21.737 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:02:21.737 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc000343ef0 18:02 18:04 1 1   tt  tt HOOK tt}
+2021/04/07 18:04:51.788 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:04:51.789 [I] [ruleunion.go:62]  Model---AddRuleUnion--p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:04:51.790 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:04:51.790 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003aa6f0 18:02 18:04 1 1   tt  tt HOOK tt}
+2021/04/07 18:06:10.325 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:06:10.327 [I] [ruleunion.go:70]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:06:10.350 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:06:10.350 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003469c0 18:02 18:04 1 1   tt  tt HOOK tt}
+2021/04/07 18:07:51.906 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:07:51.908 [I] [ruleunion.go:71]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:07:51.908 [I] [ruleunion.go:72]  Model---AddRuleUnion--Debug--err-&{%!s(int64=0) %!s(*models.RuleGroups=&{3  }) 18:02 18:04 %!s(int=1) %!s(int=1)   tt  tt HOOK tt}
+ 
+2021/04/07 18:07:51.908 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:07:51.908 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003686f0 18:02 18:04 1 1   tt  tt HOOK tt}
+2021/04/07 18:10:32.947 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:10:32.949 [I] [ruleunion.go:71]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:10:32.949 [I] [ruleunion.go:72]  Model---AddRuleUnion--Debug--err-&{0 0xc000328b10 18:02 18:04 1 1   tt  tt HOOK tt}
+ 
+2021/04/07 18:10:32.949 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:10:32.949 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000328b10 18:02 18:04 1 1   tt  tt HOOK tt}
+2021/04/07 18:12:31.542 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:12:31.543 [I] [ruleunion.go:71]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:12:31.543 [I] [ruleunion.go:72]  Model---AddRuleUnion--Debug--err-&{0 0xc0003986f0 18:02 18:04 1 1   tt  tt HOOK tt}
+ 
+2021/04/07 18:12:31.543 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:12:31.543 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003986f0 18:02 18:04 1 1   tt  tt HOOK tt}
+2021/04/07 18:46:09.315 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 18:46:09.317 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 18:48:53.065 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 18:48:53.065 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 18:49:23.819 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 <nil> 18:49 18:55 1 1 tt  tt tt tt HOOK tt}
+2021/04/07 18:49:37.157 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:49:37.159 [I] [ruleunion.go:71]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:49:37.159 [I] [ruleunion.go:72]  Model---AddRuleUnion--Debug--err-&{0 0xc0001a0930 18:49 18:55 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 18:49:37.159 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:49:37.160 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001a0930 18:49 18:55 1 1   tt tt tt HOOK tt}
+2021/04/07 18:58:01.262 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{%!s(int64=3)  }
+ 
+2021/04/07 18:58:01.269 [I] [ruleunion.go:71]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 18:58:01.269 [I] [ruleunion.go:72]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000227bf0 18:49 18:55 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 18:58:01.269 [I] [ruleunion.go:73]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 18:58:01.269 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- %!s(int64=3)
+ 
+2021/04/07 18:58:01.269 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000227bf0 18:49 18:55 1 1   tt tt tt HOOK tt}
+2021/04/07 19:55:23.898 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 19:55:23.900 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 19:55:23.900 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc00021c7e0 18:49 18:55 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 19:55:23.900 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 19:55:23.900 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 19:55:23.900 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00021c7e0 18:49 18:55 1 1   tt tt tt HOOK tt}
+2021/04/07 20:01:47.403 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 20:01:47.403 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 20:01:54.342 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 20:01:54.342 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 20:02:29.185 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 20:02:29.186 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 20:02:51.857 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:02:51.863 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:02:51.863 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc00021cbd0 20:03 20:06 1 1   ss ss ss HOOK ss}
+ 
+2021/04/07 20:02:51.863 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:02:51.863 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:02:51.863 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc00021cbd0 20:03 20:06 1 1   ss ss ss HOOK ss}
+2021/04/07 20:04:07.850 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:04:07.859 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:04:07.859 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc0000a1cb0 20:03 20:06 1 1   ss ss ss HOOK ss}
+ 
+2021/04/07 20:04:07.859 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:04:07.859 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:04:07.859 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0000a1cb0 20:03 20:06 1 1   ss ss ss HOOK ss}
+2021/04/07 20:05:43.584 [I] [controller.go:218]  %!s(<nil>) /api/v1/plans/2/receivers POST {3 0xc0001e7f50 18:48 18:53 1 1   ss ss ss HOOK ss}
+2021/04/07 20:07:41.900 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 20:07:41.900 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 20:08:03.122 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:08:03.126 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:08:03.126 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000560810 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:08:03.126 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:08:03.127 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:08:03.127 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000560810 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 20:08:12.841 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:08:12.843 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:08:12.843 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000127890 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:08:12.843 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:08:12.843 [I] [rulegroup.go:112]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:08:12.843 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000127890 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 20:11:33.933 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- [123 34 115 116 97 114 116 95 116 105 109 101 34 58 34 49 56 58 52 57 34 44 34 101 110 100 95 116 105 109 101 34 58 34 49 56 58 53 51 34 44 34 115 116 97 114 116 34 58 49 44 34 112 101 114 105 111 100 34 58 49 44 34 117 115 101 114 34 58 34 116 116 34 44 34 100 117 116 121 95 103 114 111 117 112 34 58 34 116 116 34 44 34 103 114 111 117 112 34 58 34 116 116 34 44 34 109 101 116 104 111 100 34 58 34 72 79 79 75 32 116 116 34 44 34 104 111 111 107 117 114 108 34 58 34 116 116 34 125]
+ 
+2021/04/07 20:11:33.933 [I] [rulegroup.go:110]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:11:33.934 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:11:33.934 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc00021ce40 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:11:33.934 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:11:33.934 [I] [rulegroup.go:113]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:11:33.935 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00021ce40 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 20:12:27.841 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 <nil> 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:12:27.841 [I] [rulegroup.go:110]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:12:27.843 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:12:27.843 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc00039a6f0 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:12:27.843 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:12:27.843 [I] [rulegroup.go:113]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:12:27.843 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00039a6f0 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 20:15:06.507 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc000334b10 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:15:06.507 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:15:06.508 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:15:06.508 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000334b10 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:15:06.508 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:15:06.508 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:15:06.508 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000334b10 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 20:17:46.006 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc00036e6f0 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:17:46.007 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--Ruleunion.plan_id- 3
+ 
+2021/04/07 20:17:46.007 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:17:46.008 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %!s(int64=3),[{%!s(int64=3)}]
+ 
+2021/04/07 20:17:46.008 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc00036e6f0 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:17:46.008 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:17:46.008 [I] [rulegroup.go:117]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:17:46.008 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00036e6f0 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 20:21:01.121 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc0001f0b10 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:21:01.121 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 20:21:01.122 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}], ruleunion
+ 
+2021/04/07 20:21:01.122 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc0001f0b10 18:49 18:53 1 1   tt tt tt HOOK tt}
+ 
+2021/04/07 20:21:01.122 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 20:21:01.123 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 20:21:01.123 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0001f0b10 18:49 18:53 1 1   tt tt tt HOOK tt}
+2021/04/07 21:37:55.286 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:37:55.287 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:38:16.851 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:38:16.852 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:41:00.529 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:41:00.530 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:41:42.031 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc0001e61e0 21:41 23:43 1 1   xx xx xx HOOK xx}
+ 
+2021/04/07 21:41:42.032 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 21:41:42.041 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/07 21:41:42.041 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc0001e61e0 21:41 23:43 1 1   xx xx xx HOOK xx}
+ 
+2021/04/07 21:41:42.041 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 21:41:42.041 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 21:41:42.041 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001e61e0 21:41 23:43 1 1   xx xx xx HOOK xx}
+2021/04/07 21:43:45.972 [I] [controller.go:218]  LEN: 2 DATA: map[RouterPattern:/api/v1/rules/ json:%!s(*common.Res=&{0  [{16  ceph-jiyun critical ceph-cluster devops ceph prod ceph_osd_in == 0 10s map[] CEPH集群OSD异常 CEPH集群OSD异常 1 2} {17  node-kehua critical node {instance="10.90.81.116"} 10.90.81.116 sit up == 0 20s map[] 服务器宕机 服务器宕机 1 2} {18  node-kehua critical node TestP TestA sit sum by(instance, node) (node_load15) > count by(instance, node) (node_cpu_seconds_total{mode="system"}) * 4 != 0 10s map[] 服务器CPU十五分钟负载较高 服务器CPU十五分钟负载较高 4 2}]})]
+2021/04/07 21:43:50.708 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:43:50.708 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:44:15.281 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc000238480 21:43 23:45 1 1   xx xxx xxx HOOK xxx}
+ 
+2021/04/07 21:44:15.281 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 21:44:15.285 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/07 21:44:15.285 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000238480 21:43 23:45 1 1   xx xxx xxx HOOK xxx}
+ 
+2021/04/07 21:44:15.285 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 21:44:15.285 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 21:44:15.285 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc000238480 21:43 23:45 1 1   xx xxx xxx HOOK xxx}
+2021/04/07 21:49:00.301 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:49:00.302 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:50:24.400 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc0001c5200 21:49 23:51 1 1   x s s HOOK ss}
+ 
+2021/04/07 21:50:24.400 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 21:50:24.401 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/07 21:50:24.402 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc0001c5200 21:49 23:51 1 1   x s s HOOK ss}
+ 
+2021/04/07 21:50:24.402 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 21:50:24.402 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 21:50:24.402 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001c5200 21:49 23:51 1 1   x s s HOOK ss}
+2021/04/07 21:54:14.251 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:54:14.252 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:54:44.016 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc000212210 21:54 23:59 1 1   sss  sss HOOK sss}
+ 
+2021/04/07 21:54:44.016 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 21:54:44.021 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/07 21:54:44.021 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000212210 21:54 23:59 1 1   sss  sss HOOK sss}
+ 
+2021/04/07 21:54:44.021 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 21:54:44.021 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 21:54:44.021 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc000212210 21:54 23:59 1 1   sss  sss HOOK sss}
+2021/04/07 21:55:35.754 [I] [rulegroup.go:32]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/07 21:55:35.754 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/07 21:56:01.268 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc000213200 21:55 23:59 1 1   user  group HOOK hook}
+ 
+2021/04/07 21:56:01.268 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 21:56:01.269 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/07 21:56:01.269 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000213200 21:55 23:59 1 1   user  group HOOK hook}
+ 
+2021/04/07 21:56:01.269 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 21:56:01.269 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 21:56:01.269 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc000213200 21:55 23:59 1 1   user  group HOOK hook}
+2021/04/07 21:56:17.865 [I] [rulegroup.go:109]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc0001b0f90 21:55 23:59 1 1   user  group HOOK hook}
+ 
+2021/04/07 21:56:17.865 [I] [rulegroup.go:111]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/07 21:56:17.867 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/07 21:56:17.867 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc0001b0f90 21:55 23:59 1 1   user  group HOOK hook}
+ 
+2021/04/07 21:56:17.867 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/07 21:56:17.867 [I] [rulegroup.go:114]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/07 21:56:17.867 [I] [controller.go:218]  admin /api/v1/regroup/3/reunion POST &{0 0xc0001b0f90 21:55 23:59 1 1   user  group HOOK hook}
+2021/04/07 22:06:13.328 [I] [controller.go:218]  %!s(<nil>) /api/v1/plans/2/receivers POST {4 0xc000230810 21:55 23:58 1 1   ss  ss HOOK ss}
+2021/04/08 10:03:03.900 [I] [controller.go:218]  admin /api/v1/receivers/2 DELETE 2
+2021/04/08 10:04:19.533 [I] [controller.go:218]  admin /api/v1/plans/2/receivers POST {5 0xc00009daa0 10:02 10:04 1 1   aaa  aaa HOOK hook}
+2021/04/08 10:07:44.342 [E] [plan.go:81]  Unmarshal rule error:unexpected end of JSON input
+2021/04/08 10:11:08.885 [E] [plan.go:81]  Unmarshal rule error:invalid character ',' after top-level value
+2021/04/08 10:11:33.912 [E] [plan.go:81]  Unmarshal rule error:invalid character ',' after top-level value
+2021/04/08 10:11:48.799 [I] [controller.go:218]  %!s(<nil>) /api/v1/plans/2/receivers POST {6 0xc0001b58c0 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 10:12:23.135 [I] [rulegroup.go:30]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/08 10:12:23.135 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/08 10:14:23.699 [I] [rulegroup.go:108]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc0001d8a50 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:14:23.699 [I] [rulegroup.go:110]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/08 10:14:23.707 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/08 10:14:23.707 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc0001d8a50 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:14:23.707 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/08 10:14:23.707 [I] [rulegroup.go:113]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/08 10:14:23.707 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0001d8a50 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 10:30:09.781 [I] [rulegroup.go:108]  RuleGroupController---AddRuleUnion--Ruleunion- &{0 0xc00037a150 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:30:09.782 [I] [rulegroup.go:110]  RuleGroupController---AddRuleUnion--else- &{3  }
+ 
+2021/04/08 10:30:09.787 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/08 10:30:09.787 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc00037a150 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:30:09.787 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/08 10:30:09.787 [I] [rulegroup.go:113]  RuleGroupController---AddRuleUnion--ERROR- 3
+ 
+2021/04/08 10:30:09.787 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00037a150 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 10:32:57.590 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--Ruleunion- *models.RuleUnions
+ 
+2021/04/08 10:32:57.594 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/08 10:32:57.594 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000374360 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:32:57.594 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/08 10:32:57.594 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000374360 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 10:36:33.259 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 10:36:33.263 [I] [ruleunion.go:67]  Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- 3,[{3}]
+ 
+2021/04/08 10:36:33.263 [I] [ruleunion.go:68]  Model---AddRuleUnion--Debug--err-p-&{0 0xc000208e10 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:36:33.263 [I] [ruleunion.go:69]  Model---AddRuleUnion--Debug--err-p.Plan-&{3  }
+ 
+2021/04/08 10:36:33.263 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000208e10 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 10:56:21.117 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 10:56:21.118 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{%!s(int64=0) %!s(*models.RuleGroups=<nil>) 18:48 18:53 %!s(int=1) %!s(int=1)   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+ 
+2021/04/08 10:56:21.123 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000489320 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 10:57:50.721 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 10:57:50.721 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 10:57:50.724 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00039c150 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 11:00:02.522 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 11:00:02.522 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:00:02.527 [I] [ruleunion.go:65]  Model---AddRuleUnion--Ruleunion- &{Id:0 Plan:0xc000220840 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:00:02.528 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000220840 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 11:43:49.638 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 11:43:49.639 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:43:49.640 [I] [ruleunion.go:65]  Model---AddRuleUnion--Ruleunion- &{Id:0 Plan:0xc0001c6ed0 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:43:49.640 [I] [ruleunion.go:67]  Model---AddRuleUnion--Ruleunion-Insert-Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 11:43:49.640 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0001c6ed0 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 11:47:05.656 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 11:47:05.656 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:47:05.660 [I] [ruleunion.go:65]  Model---AddRuleUnion--Ruleunion- &{Id:0 Plan:0xc00034eba0 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:47:05.660 [I] [ruleunion.go:67]  Model---AddRuleUnion--Ruleunion-Insert:Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 11:47:05.660 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00034eba0 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 11:47:43.173 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"plan_id":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 11:47:43.173 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:47:43.178 [I] [ruleunion.go:65]  Model---AddRuleUnion--Ruleunion- &{Id:0 Plan:0xc0003fe450 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:47:43.178 [I] [ruleunion.go:67]  Model---AddRuleUnion--Ruleunion-Insert:Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 11:47:43.178 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003fe450 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 11:47:48.768 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 11:47:48.768 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:47:48.769 [I] [ruleunion.go:65]  Model---AddRuleUnion--Ruleunion- &{Id:0 Plan:0xc0003fe9c0 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 11:47:48.769 [I] [ruleunion.go:67]  Model---AddRuleUnion--Ruleunion-Insert:Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 11:47:48.769 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc0003fe9c0 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 13:37:38.858 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 13:37:38.858 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:37:38.861 [I] [ruleunion.go:66]  Model---AddRuleUnion--Ruleunion- &{Id:3 Plan:0xc000208c30 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:37:38.861 [I] [ruleunion.go:68]  Model---AddRuleUnion--Ruleunion-Insert:%!s(<nil>)
+ 
+2021/04/08 13:37:38.862 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{3 0xc000208c30 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 13:38:26.922 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 13:38:26.922 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:38:26.932 [I] [ruleunion.go:66]  Model---AddRuleUnion--Ruleunion- &{Id:4 Plan:0xc000370540 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:38:26.932 [I] [ruleunion.go:68]  Model---AddRuleUnion--Ruleunion-Insert:%!s(<nil>)
+ 
+2021/04/08 13:38:26.932 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{4 0xc000370540 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 13:41:44.625 [I] [rulegroup.go:30]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/08 13:41:44.625 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/08 13:42:41.611 [I] [rulegroup.go:30]  RuleGroupController---GetAllGroup---
+ %s 
+2021/04/08 13:42:41.611 [I] [rulegroup.go:21]  Models---GetAllRuleGroups---
+ %s 
+2021/04/08 13:43:55.511 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 13:43:55.511 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:43:55.513 [I] [ruleunion.go:66]  Model---AddRuleUnion--Ruleunion- &{Id:0 Plan:0xc00019e660 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:43:55.513 [I] [ruleunion.go:68]  Model---AddRuleUnion--Ruleunion-Insert:Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 13:43:55.514 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00019e660 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 13:54:21.855 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 13:54:21.856 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:54:21.856 [I] [ruleunion.go:64]  Model---AddRuleUnion--Ruleunion-p: &{Id:0 Plan:0xc000378150 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:54:21.857 [I] [ruleunion.go:68]  Model---AddRuleUnion--Ruleunion-Insert:Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 13:54:21.858 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc000378150 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}
+2021/04/08 13:56:33.881 [I] [rulegroup.go:84]  RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- {"start_time":"18:48","end_time":"18:53","start":1,"period":1,"expression":"","user":"ssXXX","group":"ssXXXX","duty_group":"ssXXXX","method":"HOOK ssXXXX"}
+ 
+2021/04/08 13:56:33.881 [I] [rulegroup.go:85]  RuleGroupController---AddRuleUnion--Ruleunion- &{Id:0 Plan:<nil> StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:56:33.884 [I] [ruleunion.go:64]  Model---AddRuleUnion--Ruleunion-p: &{Id:0 Plan:0xc00035ede0 StartTime:18:48 EndTime:18:53 Start:1 Period:1 Expression: ReversePolishNotation: User:ssXXX Group:ssXXXX DutyGroup:ssXXXX Method:HOOK ssXXXX}
+ 
+2021/04/08 13:56:33.884 [I] [ruleunion.go:65]  Model---AddRuleUnion--Ruleunion-p.Plan: &{Id:3 GroupName: Description:}
+ 
+2021/04/08 13:56:33.885 [I] [ruleunion.go:70]  Model---AddRuleUnion--Ruleunion-Insert:Error 1054: Unknown column 'plan_id' in 'field list'
+ 
+2021/04/08 13:56:33.885 [I] [controller.go:218]  %!s(<nil>) /api/v1/regroup/3/reunion POST &{0 0xc00035ede0 18:48 18:53 1 1   ssXXX ssXXXX ssXXXX HOOK ssXXXX}

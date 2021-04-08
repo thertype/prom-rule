@@ -2,14 +2,15 @@ package models
 
 import (
 	"fmt"
-
 	"github.com/astaxie/beego/orm"
 	"github.com/pkg/errors"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/logs"
 )
 
-type Ruleunion struct {
+type RuleUnions struct {
 	Id                    int64  `orm:"auto" json:"id,omitempty"`
-	Plan                  *RuleGroups `orm:"index;rel(fk)" json:"group_id"`
+	Plan                  *RuleGroups `orm:"index;rel(fk)" json:"regroup_id"`
+//	Plan                  *RuleGroups `orm:"index;rel(fk)" json:"plan_id"`
 	StartTime             string `orm:"size(31)" json:"start_time"`
 	EndTime               string `orm:"size(31)" json:"end_time"`
 	Start                 int    `json:"start"`
@@ -21,6 +22,7 @@ type Ruleunion struct {
 	DutyGroup             string `orm:"size(255)" json:"duty_group"`
 	Method                string `orm:"size(255)" json:"method"`
 }
+
 
 type Ruler struct {
 	Id         int64  `json:"id,omitempty"`
@@ -35,30 +37,48 @@ type Ruler struct {
 	Method     string `json:"method"`
 }
 
-func (*Ruleunion) TableName() string {
+func (*RuleUnions) TableName() string {
 	return "ruleunion"
 }
 
-func (p *Ruleunion) GetAllRuleUnion(groupid string) []Ruler {
+func (p *RuleUnions) GetAllRuleUnion(groupid string) []Ruler {
 	ruleunion := []Ruler{}
-	Ormer().Raw("SELECT id,start_time,end_time,start,period,expression,user,`group`,duty_group,method FROM plan_receiver WHERE plan_id=?", groupid).QueryRows(&ruleunion)
+
+	Ormer().Raw("SELECT id,start_time,end_time,start,period,expression,user,`group`,duty_group,method FROM ruleunion WHERE regroup_id=?", groupid).QueryRows(&ruleunion)
 	return ruleunion
 }
 
-func (p *Ruleunion) AddRuleUnion() error {
+func (p *RuleUnions) AddRuleUnion() error {
+
 	var groupId []struct{ Id int64 }
 	o := orm.NewOrm()
 	o.Begin()
-	_, err := o.Raw("SELECT id FROM plan WHERE id = ? LOCK IN SHARE MODE", p.Plan.Id).QueryRows(&groupId)
+
+	_, err := o.Raw("SELECT id FROM rulegroup WHERE id = ? LOCK IN SHARE MODE", p.Plan.Id).QueryRows(&groupId)
+
 	if err != nil {
 		o.Rollback()
 		return errors.Wrap(err, "database query error")
 	} else {
 		if len(groupId) > 0 {
+			logs.Info("Model---AddRuleUnion--Ruleunion-p: %+v\n ", p)
+			logs.Info("Model---AddRuleUnion--Ruleunion-p.Plan: %+v\n ", p.Plan)
+
+
 			_, err = o.Insert(p)
+
+			logs.Info("Model---AddRuleUnion--Ruleunion-Insert:%s\n ", err)
+
+
 			if err != nil {
 				o.Rollback()
-				return errors.Wrap(err, "database insert error")
+
+				//logs.Info("Model---AddRuleUnion--Debug--err-p.Plan.Id, groupId- %v,%v\n ",p.Plan.Id, groupId)
+				//logs.Info("Model---AddRuleUnion--Debug--err-p-%v\n ",p)
+				//logs.Info("Model---AddRuleUnion--Debug--err-p.Plan-%v\n ",p.Plan)
+
+
+				return errors.Wrap(err, "database insert error-AddRuleUnion")
 			}
 		} else {
 			o.Commit()
@@ -69,12 +89,12 @@ func (p *Ruleunion) AddRuleUnion() error {
 	return errors.Wrap(err, "database insert error")
 }
 
-func (p *Ruleunion) UpdateRuleUnion() error {
+func (p *RuleUnions) UpdateRuleUnion() error {
 	_, err := Ormer().Update(p, "start_time", "end_time", "start", "period", "expression", "reverse_polish_notation", "user", "group", "duty_group", "method")
 	return errors.Wrap(err, "database update error")
 }
 
-func (p *Ruleunion) DeleteRuleUnion(id string) error {
-	_, err := Ormer().Raw("DELETE FROM plan_receiver WHERE id=?", id).Exec()
+func (p *RuleUnions) DeleteRuleUnion(id string) error {
+	_, err := Ormer().Raw("DELETE FROM ruleunion WHERE id=?", id).Exec()
 	return errors.Wrap(err, "database delete error")
 }

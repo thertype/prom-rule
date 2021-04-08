@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import { Button, Table, message, Popconfirm, Divider, Input, Icon } from 'antd'
-import { getStrategy, addStrategy, updateStrategy, deleteStrategy, getReceiver, addReceiver, updateReceiver, deleteReceiver } from '@apis/strategy'
+import { getRuleGroup, addRuleGroup, updateRuleGroup, deleteRuleGroup, getRuleUnion, addRuleUnion, updateRuleUnion, deleteRuleUnion } from '@apis/rulegroup'
 import Highlighter from 'react-highlight-words'
-import CreateEditStrategy from './strategy/create-edit-strategy'
-import CreateEditReceiver from './strategy/create-edit-receiver'
+import CreateEditRuleGroup from './rulegroup/create-edit-RuleGroup'
+import CreateEditRuleUnion from './rulegroup/create-edit-RuleUnion'
 
-export default class Strategy extends Component {
+export default class RuleGroup extends Component {
   state = {
     dataSource: [],
     expandData: {},
     filterItem: {
       description: false,
-      rule_labels: false,
+      groupname: false,
     },
   }
   currentRow = null
@@ -22,38 +22,38 @@ export default class Strategy extends Component {
 
   getColumnSearchProps = dataIndex => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm }) => (
-      <div style={{ padding: 8 }}>
-        <Input
-          ref={(node) => {
-            this.searchInput = node;
-          }}
-          placeholder={`Search ${dataIndex}`}
-          value={selectedKeys[0]}
-          onInput={(e) => { setSelectedKeys(e.target.value ? [e.target.value] : []); this.handleSearch(selectedKeys, confirm, dataIndex) }}
-          onBlur={() => this.setState(state => ({
-            filterItem: { ...state.filterItem, [dataIndex]: false },
-          }))}
-          style={{ width: 188, marginBottom: 8, display: 'block' }}
-        />
-      </div>
+        <div style={{ padding: 8 }}>
+          <Input
+              ref={(node) => {
+                this.searchInput = node;
+              }}
+              placeholder={`Search ${dataIndex}`}
+              value={selectedKeys[0]}
+              onInput={(e) => { setSelectedKeys(e.target.value ? [e.target.value] : []); this.handleSearch(selectedKeys, confirm, dataIndex) }}
+              onBlur={() => this.setState(state => ({
+                filterItem: { ...state.filterItem, [dataIndex]: false },
+              }))}
+              style={{ width: 188, marginBottom: 8, display: 'block' }}
+          />
+        </div>
     ),
     filterIcon: filtered => (
-      <Icon type="search"
-        onMouseDown={() => {
-          this.setState(state => ({
-            filterItem: { ...state.filterItem, [dataIndex]: true },
-          })); setTimeout(() => this.searchInput.focus());
-        }}
-        style={{ color: filtered ? '#1890ff' : undefined }}
-      />
+        <Icon type="search"
+              onMouseDown={() => {
+                this.setState(state => ({
+                  filterItem: { ...state.filterItem, [dataIndex]: true },
+                })); setTimeout(() => this.searchInput.focus());
+              }}
+              style={{ color: filtered ? '#1890ff' : undefined }}
+        />
     ),
     onFilter: (value, record) => {
       let content
       content = record[dataIndex]
       return content
-        .toString()
-        .toLowerCase()
-        .includes(value.toLowerCase())
+          .toString()
+          .toLowerCase()
+          .includes(value.toLowerCase())
     },
     onFilterDropdownVisibleChange: (visible) => {
       if (visible) {
@@ -61,15 +61,15 @@ export default class Strategy extends Component {
       }
     },
     render: text =>
-      (this.state.searchedColumn === dataIndex ? (
-        <Highlighter
-          highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
-          searchWords={[this.state.searchText]}
-          autoEscape
-          textToHighlight={text.toString()}
-        />
-      ) : (
-          text
+        (this.state.searchedColumn === dataIndex ? (
+            <Highlighter
+                highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
+                searchWords={[this.state.searchText]}
+                autoEscape
+                textToHighlight={text.toString()}
+            />
+        ) : (
+            text
         )),
   })
 
@@ -82,7 +82,7 @@ export default class Strategy extends Component {
   }
 
   getList() {
-    getStrategy({}, (data) => {
+    getRuleGroup({}, (data) => {
       const obj = {}
       data.forEach((item) => {
         obj[item.id] = []
@@ -98,9 +98,9 @@ export default class Strategy extends Component {
       })
     })
   }
-  getReceiver = (id) => {
+  getRuleUnion = (id) => {
     this.expandLoading = true
-    getReceiver({}, { id }, (res) => {
+    getRuleUnion({}, { id }, (res) => {
       const { expandData } = this.state
       expandData[id] = res || []
       this.setState({
@@ -111,73 +111,73 @@ export default class Strategy extends Component {
   }
 
   handleAdd = () => {
-    this.createEditStrategy.updateValue()
+    this.createEditRuleGroup.updateValue()
   }
   handleEdit(record) {
-    this.createEditStrategy.updateValue(record)
+    this.createEditRuleGroup.updateValue(record)
   }
   handleDelete(record) {
     // eslint-disable-next-line camelcase
-    const { id, rule_labels } = record
-    deleteStrategy({}, { id }, (res) => {
+    const { id, groupname } = record
+    deleteRuleGroup({}, { id }, (res) => {
       // eslint-disable-next-line camelcase
-      message.success(`删除${rule_labels}成功`)
+      message.success(`删除${groupname}成功`)
       this.getList()
     })
   }
-  handleEditReceiver(record) {
-    this.createEditReceiver.updateValue({ mode: 'edit', ...record })
+  handleEditRuleUnion(record) {
+    this.createEditRuleUnion.updateValue({ mode: 'edit', ...record })
   }
-  handleDeleteReceiver(record) {
+  handleDeleteRuleUnion(record) {
     const { id } = record
-    deleteReceiver({}, { id }, (res) => {
+    deleteRuleUnion({}, { id }, (res) => {
       message.success(`删除${id}成功`)
-      this.getReceiver(this.currentRow)
+      this.getRuleUnion(this.currentRow)
     })
   }
-  updateStrategy = values => new Promise((resolve) => {
+  updateRuleGroup = values => new Promise((resolve) => {
     const { id, ...data } = values
     if (id) {
-      updateStrategy(data, { id }, (res) => {
+      updateRuleGroup(data, { id }, (res) => {
         resolve(true)
         this.getList()
       })
       return
     }
-    addStrategy(data, (res) => {
+    addRuleGroup(data, (res) => {
       resolve(true)
       this.getList()
     })
   })
-  updateReceiver = value => new Promise((resolve) => {
+  updateRuleUnion = value => new Promise((resolve) => {
     const { id, mode, ...data } = value
     if (mode === 'edit') {
-      updateReceiver(data, { id }, (res) => {
+      updateRuleUnion(data, { id }, (res) => {
         resolve(true)
-        this.getReceiver(this.currentRow)
+        this.getRuleUnion(this.currentRow)
       })
       return
     }
-    addReceiver(data, { id }, (res) => {
+    addRuleUnion(data, { id }, (res) => {
       resolve(true)
-      this.getReceiver(id)
+      this.getRuleUnion(id)
     })
   })
   onRefStr(component) {
-    this.createEditStrategy = component
+    this.createEditRuleGroup = component
   }
   onRefRec(component) {
-    this.createEditReceiver = component
+    this.createEditRuleUnion = component
   }
   expandedRowRender(recordRow) {
     const { id } = recordRow
     const { expandData } = this.state
     const { expandLoading } = this
     if (!expandLoading) {
-      this.getReceiver(id)
+      this.getRuleUnion(id)
     }
-    const addStrategyEvent = () => {
-      this.createEditReceiver.updateValue({ id, mode: 'create' })
+    const addRuleGroupEvent = () => {
+      this.createEditRuleUnion.updateValue({ id, mode: 'create' })
     }
     const columns = [
       {
@@ -185,7 +185,7 @@ export default class Strategy extends Component {
         align: 'center',
         dataIndex: 'date',
         render: (text, record) => (
-          <span>{record.start_time}~{record.end_time}</span>
+            <span>{record.start_time}~{record.end_time}</span>
         ),
       },
       { title: '报警延迟', align: 'center', dataIndex: 'start' },
@@ -196,20 +196,20 @@ export default class Strategy extends Component {
       { title: 'Filter表达式', align: 'center', dataIndex: 'expression' },
       { title: '报警方式', align: 'center', dataIndex: 'method' },
       {
-        title: () => (<div>操作<Divider type="vertical" /><a onClick={addStrategyEvent}>添加</a></div>),
+        title: () => (<div>操作<Divider type="vertical" /><a onClick={addRuleGroupEvent}>添加</a></div>),
         dataIndex: 'operation',
         align: 'center',
         key: 'operation',
         render: (text, record) => (
-          <span>
-            <a onClick={() => { this.currentRow = id; this.handleEditReceiver(record) }}>编辑</a>
-            {/* <Divider type="vertical" /> */}
-            <Popconfirm
-              title="确定要删除吗?"
-              onConfirm={() => { this.currentRow = id; this.handleDeleteReceiver(record) }}
-              okText="Yes"
-              cancelText="No"
-            >
+            <span>
+            <a onClick={() => { this.currentRow = id; this.handleEditRuleUnion(record) }}>编辑</a>
+              {/* <Divider type="vertical" /> */}
+              <Popconfirm
+                  title="确定要删除吗?"
+                  onConfirm={() => { this.currentRow = id; this.handleDeleteRuleUnion(record) }}
+                  okText="Yes"
+                  cancelText="No"
+              >
               <a href="#">删除</a>
             </Popconfirm>
           </span>
@@ -235,24 +235,24 @@ export default class Strategy extends Component {
       {
         title: '描述',
         align: 'center',
-        dataIndex: 'rule_labels',
-        key: 'rule_labels',
-        ...this.getColumnSearchProps('rule_labels'),
-        filterDropdownVisible: this.state.filterItem.rule_labels,
+        dataIndex: 'groupname',
+        key: 'groupname',
+        ...this.getColumnSearchProps('groupname'),
+        filterDropdownVisible: this.state.filterItem.groupname,
       },
       {
         title: '操作',
         align: 'center',
         key: 'action',
         render: (text, record, index) => (
-          <span>
+            <span>
             <a onClick={() => this.handleEdit(record)}>编辑</a>
             <Divider type="vertical" />
             <Popconfirm
-              title="确定要删除吗?"
-              onConfirm={() => this.handleDelete(record)}
-              okText="Yes"
-              cancelText="No"
+                title="确定要删除吗?"
+                onConfirm={() => this.handleDelete(record)}
+                okText="Yes"
+                cancelText="No"
             >
               <a href="#">删除</a>
             </Popconfirm>
@@ -261,14 +261,14 @@ export default class Strategy extends Component {
       },
     ]
     return (
-      <div>
-        <div id="top-section">
-          <Button type="primary" onClick={this.handleAdd}>添加</Button>
+        <div>
+          <div id="top-section">
+            <Button type="primary" onClick={this.handleAdd}>添加</Button>
+          </div>
+          <Table dataSource={dataSource} expandedRowRender={record => this.expandedRowRender(record)} columns={columns} rowKey="id" />
+          <CreateEditRuleGroup OnRef={c => this.onRefStr(c)} onSubmit={this.updateRuleGroup} />
+          <CreateEditRuleUnion OnRef={c => this.onRefRec(c)} onSubmit={this.updateRuleUnion} />
         </div>
-        <Table dataSource={dataSource} expandedRowRender={record => this.expandedRowRender(record)} columns={columns} rowKey="id" />
-        <CreateEditStrategy OnRef={c => this.onRefStr(c)} onSubmit={this.updateStrategy} />
-        <CreateEditReceiver OnRef={c => this.onRefRec(c)} onSubmit={this.updateReceiver} />
-      </div>
     )
   }
 }

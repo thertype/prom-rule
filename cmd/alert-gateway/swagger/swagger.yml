@@ -165,7 +165,7 @@ paths:
     delete:
       tags:
       - regroup
-  /regroup/{groupid}/ruleunion/:
+  /regroup/{groupid}/reunion/:
     get:
       tags:
       - regroup

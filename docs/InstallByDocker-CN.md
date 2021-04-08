@@ -1,7 +1,7 @@
 ## 克隆代码仓库
 
 ```bash
-$ git clone https://github.com/Qihoo360/doraemon.git
+$ git clone https://github.com/thertype/prom-rule.git
 ```
 ## 修改配置文件  
 1.将[deployments/docker-compose/conf/config.js](../deployments/docker-compose/conf/config.js)中的"localhost"替换为本机物理网卡ip，端口号保持不变。  

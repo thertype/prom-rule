@@ -5,7 +5,7 @@ import (
 	"github.com/astaxie/beego/context/param"
 )
 
-const baseControllers = "github.com/Qihoo360/doraemon/cmd/alert-gateway/controllers"
+const baseControllers = "github.com/thertype/prom-rule/cmd/alert-gateway/controllers"
 
 func init() {
 
@@ -300,7 +300,7 @@ func init() {
 
 	beego.GlobalControllerRouter[baseControllers+":RuleGroupController"] = []beego.ControllerComments{
 		{
-			Method:           "GetAllGroup",
+			Method:           "GetAllRuleGroup",
 			Router:           `/`,
 			AllowHTTPMethods: []string{"get"},
 			MethodParams:     param.Make(),
@@ -308,7 +308,7 @@ func init() {
 			Params:           nil,
 		},
 		{
-			Method:           "AddGroup",
+			Method:           "AddRuleGroup",
 			Router:           `/`,
 			AllowHTTPMethods: []string{"post"},
 			MethodParams:     param.Make(),
@@ -316,7 +316,7 @@ func init() {
 			Params:           nil,
 		},
 		{
-			Method:           "UpdateGroup",
+			Method:           "UpdateRuleGroup",
 			Router:           `/:groupid`,
 			AllowHTTPMethods: []string{"put"},
 			MethodParams:     param.Make(),
@@ -324,7 +324,7 @@ func init() {
 			Params:           nil,
 		},
 		{
-			Method:           "DeleteGroup",
+			Method:           "DeleteRuleGroup",
 			Router:           `/:groupid`,
 			AllowHTTPMethods: []string{"delete"},
 			MethodParams:     param.Make(),
@@ -332,16 +332,16 @@ func init() {
 			Params:           nil,
 		},
 		{
-			Method:           "GetAllRule",
-			Router:           `/:groupid/ruleunion/`,
+			Method:           "GetAllRuleUnion",
+			Router:           `/:groupid/reunion/`,
 			AllowHTTPMethods: []string{"get"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil,
 		},
 		{
-			Method:           "AddRule",
-			Router:           `/:groupid/ruleunion/`,
+			Method:           "AddRuleUnion",
+			Router:           `/:groupid/reunion/`,
 			AllowHTTPMethods: []string{"post"},
 			MethodParams:     param.Make(),
 			Filters:          nil,

@@ -1,4 +1,0 @@
-2021/03/21 11:00:08.876 [I] [asm_amd64.s:1357]  Alerts to send:map[CALL:[] HOOK http://192.168.70.113:21073/alertXX:[{1 2 [test lipanfeng] [{1 22635 0 agent was down_newwww cadvisor map[instance:cadvisor:8080 job:cadvisor]} {2 10950 0 agent was down_newwww cadvisor map[instance:cadvisor:8080 job:cadvisor]}]}] LANXIN:[] SMS:[]]
-2021/03/21 11:00:08.879 [I] [asm_amd64.s:1357]  Recoveries to send:map[LANXIN:map[]]
-2021/03/21 21:45:06.688 [I] [asm_amd64.s:1357]  Alerts to send:map[CALL:[] LANXIN:[] SMS:[]]
-2021/03/21 21:45:06.689 [I] [asm_amd64.s:1357]  Recoveries to send:map[LANXIN:map[]]

@@ -7,6 +7,7 @@ import '@/styles/base.less'
 import Rules from '@content/rules'
 import Promethus from '@content/promethus'
 import Strategy from '@content/strategy'
+import RruleGroup from '@content/rulegroup'
 import Alerts from '@content/alerts'
 import AlertsConfirm from '@content/alerts_confirm'
 import AlertsConfirmByID from '@content/alerts_confirm_id'
@@ -53,6 +54,7 @@ export default class App extends Component {
                   <Route path={`${path}rules/:id`} component={Rules} />
                   <Route path={`${path}promethus`} component={Promethus} />
                   <Route path={`${path}strategy`} component={Strategy} />
+                  <Route path={`${path}rulegroup`} component={RruleGroup} />
                   <Route path={`${path}alerts`} component={Alerts} />
                   <Route exact path={`${path}alerts_confirm`} component={AlertsConfirm} />
                   <Route path={`${path}alerts_confirm/:id`} component={AlertsConfirmByID} />

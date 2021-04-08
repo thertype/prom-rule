@@ -2,7 +2,7 @@
 
 ## 从Github下载代码  
 ```shell
-$ git clone https://github.com/Qihoo360/doraemon.git
+$ git clone https://github.com/thertype/prom-rule.git
 ```
 ## 安装依赖环境  
 Doraemon依赖MySQL作为数据存储。  

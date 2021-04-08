@@ -25,6 +25,8 @@ func init() {
 		new(Manages),
 		new(Configs),
 		new(Users),
+		new(RuleGroups),
+		new(RuleUnions),
 		//new(Labels),
 		//new(RuleLabels),
 		//new(Expressions),

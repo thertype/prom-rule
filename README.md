@@ -40,7 +40,7 @@ The whole system adopts the separation of front and back ends, in which the fron
 - Clone
 
   ```bash
-  $ git clone https://github.com/Qihoo360/doraemon.git
+  $ git clone https://github.com/thertype/prom-rule.git
   ```
 
 - Modify the Configuration File

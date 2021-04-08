@@ -15,7 +15,9 @@ import (
 	"github.com/astaxie/beego/context"
 	"github.com/astaxie/beego/plugins/cors"
 
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/controllers"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/controllers"
+
+	//"github.com/thertype/prom-rule/cmd/alert-gateway/controllers"
 )
 
 var FilterUser = func(ctx *context.Context) {

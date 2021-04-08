@@ -6,7 +6,7 @@ import (
 	"github.com/astaxie/beego/orm"
 	"github.com/pkg/errors"
 
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/logs"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/logs"
 )
 
 type Rules struct {

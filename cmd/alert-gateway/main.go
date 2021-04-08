@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/initial"
-	_ "github.com/Qihoo360/doraemon/cmd/alert-gateway/logs"
-	_ "github.com/Qihoo360/doraemon/cmd/alert-gateway/routers"
-	"github.com/Qihoo360/doraemon/pkg/auth/ldaputil"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/initial"
+	_ "github.com/thertype/prom-rule/cmd/alert-gateway/logs"
+	_ "github.com/thertype/prom-rule/cmd/alert-gateway/routers"
+	"github.com/thertype/prom-rule/pkg/auth/ldaputil"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"github.com/go-ldap/ldap"

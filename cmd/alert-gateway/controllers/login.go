@@ -2,12 +2,13 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/logs"
-	"github.com/Qihoo360/doraemon/pkg/auth/ldaputil"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/logs"
+	"github.com/thertype/prom-rule/pkg/auth/ldaputil"
 	"github.com/astaxie/beego"
 
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/common"
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/models"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/common"
+	//"github.com/thertype/prom-rule/cmd/alert-gateway/models"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/models"
 )
 
 type LoginController struct {

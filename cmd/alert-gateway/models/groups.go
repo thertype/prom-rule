@@ -9,7 +9,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/pkg/errors"
 
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/common"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/common"
 )
 
 type Groups struct {

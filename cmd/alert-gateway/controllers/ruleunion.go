@@ -6,9 +6,11 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/common"
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/logs"
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/models"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/common"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/logs"
+	//"github.com/thertype/prom-rule/cmd/alert-gateway/models"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/models"
+
 )
 
 type RuleUnionController struct {
@@ -22,7 +24,7 @@ func (c *RuleUnionController) URLMapping() {
 
 // @router /:ruleunionid [put]
 func (c *RuleUnionController) UpdateRuleUnion() {
-	var ruleunion models.Ruleunion
+	var ruleunion models.RuleUnions
 	var ans common.Res
 	receiverId := c.Ctx.Input.Param(":ruleunionid")
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &ruleunion)
@@ -65,7 +67,7 @@ func (c *RuleUnionController) UpdateRuleUnion() {
 // @router /:ruleunionid [delete]
 func (c *RuleUnionController) DeleteRuleUnion() {
 	ruleunionId := c.Ctx.Input.Param(":ruleunionid")
-	var Ruleunion *models.Ruleunion
+	var Ruleunion *models.RuleUnions
 	var ans common.Res
 	err := Ruleunion.DeleteRuleUnion(ruleunionId)
 	if err != nil {

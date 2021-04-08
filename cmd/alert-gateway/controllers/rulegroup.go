@@ -6,9 +6,10 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/common"
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/logs"
-	"github.com/Qihoo360/doraemon/cmd/alert-gateway/models"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/common"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/logs"
+	//"github.com/thertype/prom-rule/cmd/alert-gateway/models"
+	"github.com/thertype/prom-rule/cmd/alert-gateway/models"
 )
 
 type RuleGroupController struct {
@@ -16,18 +17,19 @@ type RuleGroupController struct {
 }
 
 func (c *RuleGroupController) URLMapping() {
-	c.Mapping("GetAllRuel", c.GetAllRule)
-	c.Mapping("AddRule", c.AddRule)
-	c.Mapping("GetAllGroup", c.GetAllGroup)
-	c.Mapping("AddGroup", c.AddGroup)
-	c.Mapping("UpdateGroup", c.UpdateGroup)
-	c.Mapping("DeleteGroup", c.DeleteGroup)
+	c.Mapping("GetAllRuleUnion", c.GetAllRuleUnion)
+	c.Mapping("AddRuleUnion", c.AddRuleUnion)
+	c.Mapping("GetAllRuleGroup", c.GetAllRuleGroup)
+	c.Mapping("AddRuleGroup", c.AddRuleGroup)
+	c.Mapping("UpdateRuleGroup", c.UpdateRuleGroup)
+	c.Mapping("DeleteRuleGroup", c.DeleteRuleGroup)
 }
 
 // @router / [get]
-func (c *RuleGroupController) GetAllGroup() {
+func (c *RuleGroupController) GetAllRuleGroup() {
+	logs.Info("RuleGroupController---GetAllGroup---\n %s ")
 	var Ruleunion *models.RuleGroups
-	groups := Ruleunion.GetAllGroups()
+	groups := Ruleunion.GetAllRuleGroups()
 	c.Data["json"] = &common.Res{
 		Code: 0,
 		Msg:  "",
@@ -37,7 +39,7 @@ func (c *RuleGroupController) GetAllGroup() {
 }
 
 // @router / [post]
-func (c *RuleGroupController) AddGroup() {
+func (c *RuleGroupController) AddRuleGroup() {
 	var group models.RuleGroups
 	var ans common.Res
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &group)
@@ -46,7 +48,7 @@ func (c *RuleGroupController) AddGroup() {
 		ans.Code = 1
 		ans.Msg = "Unmarshal error"
 	} else {
-		err = group.AddGroups()
+		err = group.AddRuleGroups()
 		if err != nil {
 			ans.Code = 1
 			ans.Msg = err.Error()
@@ -57,10 +59,10 @@ func (c *RuleGroupController) AddGroup() {
 	c.ServeJSON()
 }
 
-// @router /:groupid/ruleunion/ [get]
-func (c *RuleGroupController) GetAllRule() {
+// @router /:groupid/reunion/ [get]
+func (c *RuleGroupController) GetAllRuleUnion() {
 	groupId := c.Ctx.Input.Param(":groupid")
-	var Ruleunion *models.Ruleunion
+	var Ruleunion *models.RuleUnions
 	ruleunion := Ruleunion.GetAllRuleUnion(groupId)
 	c.Data["json"] = &common.Res{
 		Code: 0,
@@ -70,12 +72,19 @@ func (c *RuleGroupController) GetAllRule() {
 	c.ServeJSON()
 }
 
-// @router /:groupid/ruleunion/ [post]
-func (c *RuleGroupController) AddRule() {
+// @router /:groupid/reunion/ [post]
+func (c *RuleGroupController) AddRuleUnion() {
+//	groupId := c.Ctx.Input.Param(":groupid")
 	groupId := c.Ctx.Input.Param(":groupid")
-	var Ruleunion *models.Ruleunion
+
+	var Ruleunion *models.RuleUnions
 	var ans common.Res
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &Ruleunion)
+
+	logs.Info("RuleGroupController---AddRuleUnion--c.Ctx.Input.RequestBody- %s\n ", c.Ctx.Input.RequestBody)
+	logs.Info("RuleGroupController---AddRuleUnion--Ruleunion- %+v\n ", Ruleunion)
+
+
 	if err != nil {
 		logs.Error("Unmarshal rule error:%v", err)
 		ans.Code = 1
@@ -90,7 +99,7 @@ func (c *RuleGroupController) AddRule() {
 				ReversePolishNotation := common.Converse2ReversePolishNotation(root)
 				Ruleunion.ReversePolishNotation = ReversePolishNotation
 				id, _ := strconv.ParseInt(groupId, 10, 64)
-				Ruleunion.Plan = &models.RuleGroups{Id: id}   //need edit
+				Ruleunion.Plan = &models.RuleGroups{Id: id}
 				err = Ruleunion.AddRuleUnion()
 				if err != nil {
 					ans.Code = 1
@@ -100,8 +109,12 @@ func (c *RuleGroupController) AddRule() {
 		} else {
 			id, _ := strconv.ParseInt(groupId, 10, 64)
 			Ruleunion.Plan = &models.RuleGroups{Id: id}
+			//logs.Info("RuleGroupController---AddRuleUnion--Ruleunion- %v\n ", Ruleunion)
+
+			//logs.Info("RuleGroupController---AddRuleUnion--else- %v\n ", Ruleunion.Plan)
 			err = Ruleunion.AddRuleUnion()
 			if err != nil {
+				//logs.Info("RuleGroupController---AddRuleUnion--ERROR- %v\n ", id)
 				ans.Code = 1
 				ans.Msg = err.Error()
 			}
@@ -113,7 +126,7 @@ func (c *RuleGroupController) AddRule() {
 }
 
 // @router /:groupid [put]
-func (c *RuleGroupController) UpdateGroup() {
+func (c *RuleGroupController) UpdateRuleGroup() {
 	var group models.RuleGroups
 	groupId := c.Ctx.Input.Param(":groupid")
 	id, _ := strconv.ParseInt(groupId, 10, 64)
@@ -121,7 +134,7 @@ func (c *RuleGroupController) UpdateGroup() {
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &group)
 	if err == nil {
 		group.Id = id
-		err = group.UpdateGroups()
+		err = group.UpdateRuleGroups()
 		if err != nil {
 			ans.Code = 1
 			ans.Msg = err.Error()
@@ -136,12 +149,12 @@ func (c *RuleGroupController) UpdateGroup() {
 }
 
 // @router /:groupid [delete]
-func (c *RuleGroupController) DeleteGroup() {
+func (c *RuleGroupController) DeleteRuleGroup() {
 	groupId := c.Ctx.Input.Param(":groupid")
 	id, _ := strconv.ParseInt(groupId, 10, 64)
 	var Ruleunion *models.RuleGroups
 	var ans common.Res
-	err := Ruleunion.DeleteGroups(id)
+	err := Ruleunion.DeleteRuleGroups(id)
 	if err != nil {
 		ans.Code = 1
 		ans.Msg = err.Error()

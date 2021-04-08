@@ -2,7 +2,7 @@
 
 ## Clone Source Code from Github  
 ```shell
-$ git clone https://github.com/Qihoo360/doraemon.git
+$ git clone https://github.com/thertype/prom-rule.git
 ```
 ## Install Dependent Environment   
 Doraemon relies on MySQL,where MySQL is a required service.

@@ -95,7 +95,7 @@ export default class Sider extends Component {
               <Icon type="desktop" />
               <span>数据源管理</span>
             </Menu.Item>
-            <Menu.Item key="group">
+            <Menu.Item key="rulegroup">
               <Icon type="contacts" />
               <span>告警模板管理</span>
             </Menu.Item>

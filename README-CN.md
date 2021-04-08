@@ -40,7 +40,7 @@ Doraemon 是一个基于 **[Prometheus](https://prometheus.io)** 的监控系统
 - 克隆代码仓库
 
   ```bash
-  $ git clone https://github.com/Qihoo360/doraemon.git
+  $ git clone https://github.com/thertype/prom-rule.git
   ```
 
 - 修改配置文件  

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Qihoo360/doraemon/cmd/rule-engine/modules"
+	"github.com/thertype/prom-rule/cmd/rule-engine/modules"
 	"github.com/astaxie/beego"
 	"github.com/go-kit/kit/log/level"
 	"github.com/pkg/errors"
